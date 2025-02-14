@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dramas - Pakistani Dramas Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding-top: 4rem;
+        }
+
+        nav {
+            background-color: #006400;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #90EE90;
+        }
+
+        .dramas-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .filters {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #006400;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .filter-button:hover {
+            background-color: #004d00;
+        }
+
+        .drama-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .drama-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .drama-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .drama-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .drama-info {
+            padding: 1rem;
+        }
+
+        .drama-info h3 {
+            color: #006400;
+            margin-bottom: 0.5rem;
+        }
+
+        .drama-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .rating {
+            color: #ffd700;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            background-color: #006400;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dramas.html">Dramas</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="dramas-container">
+        <h1>Pakistani Dramas</h1>
+        
+        <div class="filters">
+            <button class="filter-button">All</button>
+            <button class="filter-button">Romance</button>
+            <button class="filter-button">Family</button>
+            <button class="filter-button">Social Issues</button>
+            <button class="filter-button">Thriller</button>
+        </div>
+
+        <div class="drama-grid">
+            <div class="drama-card">
+                <img src="sinf_ahan.jpg" alt="Mere Humsafar">
+                <div class="drama-info">
+                    <h3>Sinf-e-Aahan</h3>
+                    <div class="drama-meta">
+                        <span>2023 | Romance</span>
+                    </div>
+                    <p>Strong women breaking stereotypes.</p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+            </div>
+
+            <div class="drama-card">
+                <img src="parizaad.jpg" alt="Sang-e-Mah">
+                <div class="drama-info">
+                    <h3>Parizaad</h3>
+                    <div class="drama-meta">
+                        <span>2022 | Social Drama</span>
+                    </div>
+                    <p>Journey of a man fighting against societal prejudices.</p>
+                    <div class="rating">★★★★★</div>
+                </div>
+            </div>
+
+            <div class="drama-card">
+                <img src="tere_bin.jpg" alt="Dil Ruba">
+                <div class="drama-info">
+                    <h3>Tere Bin/h3>
+                    <div class="drama-meta">
+                        <span>2023 | Thriller</span>
+                    </div>
+                    <p>A story of love, sacrifice, and family values. </p>
+                    <div class="rating">★★★★☆</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pakistani Dramas Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
