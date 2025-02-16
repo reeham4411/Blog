@@ -4,12 +4,15 @@ Welcome to the **Pakistani Dramas Blog**! 🎭 This simple yet elegant website p
 
 ## 📌 Features
 - 🏠 **Home Page** – A welcoming introduction to the Pakistani drama industry.
+- 🔑 **Login Page** – Secure login system for user access.
 - 🎬 **Dramas Section** – Listings of famous Pakistani dramas.
 - ⭐ **Reviews** – Detailed reviews of top-rated dramas.
+- 📖 **About Page** – Learn more about the purpose and vision of the website.
 - 📞 **Contact Page** – Reach out for inquiries or suggestions.
 - 🎵 **OST Section** – Listen to iconic drama soundtracks.
 - 🎥 **Video Previews** – Watch featured drama clips.
 - 📊 **Ratings Table** – View ratings for the most loved dramas.
+- 📜 **Bonus Feature** – Implementation of `<details>` and `<summary>` for expandable content sections.
 
 ## 🛠️ Technologies Used
 - **HTML5** – For structuring the web pages.
@@ -24,17 +27,16 @@ Welcome to the **Pakistani Dramas Blog**! 🎭 This simple yet elegant website p
 ## 📂 Project Structure
 ```
 ├── index.html       # Home page
+├── login.html       # Login page
 ├── dramas.html      # Dramas listing
 ├── reviews.html     # Reviews page
+├── about.html       # About page
 ├── contact.html     # Contact page
 └── assets/
     ├── images/      # Drama posters and thumbnails
     ├── audio/       # Drama OST files
-    └── videos/      # Drama clips
+    ├── videos/      # Drama clips
 ```
-
-## 📸 Screenshots
-(Insert screenshots of the website here to showcase its design)
 
 ## 🚀 How to Run the Website
 ### Using File Explorer

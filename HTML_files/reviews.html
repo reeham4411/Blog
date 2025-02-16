@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pakistani Dramas Hub</title>
+    <title>Dramas - Pakistani Dramas Hub</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -13,11 +13,12 @@
         }
 
         body {
-            background-color: #f5f5f5;
+            background-color:  #f8e9ea;
+            padding-top: 4rem;
         }
 
         nav {
-            background-color: #006400;
+            background-color: #680002;
             padding: 1rem;
             position: fixed;
             width: 100%;
@@ -40,38 +41,19 @@
         }
 
         nav a:hover {
-            color: #90EE90;
+            color:#e2bdbe;
         }
 
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('Hijar.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            margin-top: 3.5rem;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .featured-dramas {
-            padding: 2rem;
+        .dramas-container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
 
         .drama-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
         }
 
         .drama-card {
@@ -80,10 +62,12 @@
             overflow: hidden;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             transition: transform 0.3s;
+            padding: 1rem;
         }
 
         .drama-card:hover {
             transform: translateY(-5px);
+            background-color: #e2bdbe;
         }
 
         .drama-card img {
@@ -97,13 +81,19 @@
         }
 
         .drama-info h3 {
-            color: #006400;
+            color: #680002;
+            margin-bottom: 0.5rem;
+        }
+
+        .drama-meta {
+            color: #666;
+            font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
 
         .cta-button {
             display: inline-block;
-            background-color: #006400;
+            background-color: #680002;
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 5px;
@@ -112,11 +102,11 @@
         }
 
         .cta-button:hover {
-            background-color: #004d00;
+            background-color: #680002;
         }
 
         footer {
-            background-color: #006400;
+            background-color:#680002;
             color: white;
             text-align: center;
             padding: 1rem;
@@ -127,6 +117,7 @@
 <body>
     <nav>
         <ul>
+            <li><a href="login.html">Login</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="dramas.html">Dramas</a></li>
             <li><a href="reviews.html">Reviews</a></li>
@@ -135,42 +126,53 @@
         </ul>
     </nav>
 
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Pakistani Dramas Hub</h1>
-            <p>Discover the Best Pakistani Dramas All in One Place</p>
-        </div>
-    </div>
+    <div class="dramas-container">
+        <h1>Let's Review!</h1><br>
 
-    <section class="featured-dramas">
-        <h2>Featured Dramas</h2>
         <div class="drama-grid">
             <div class="drama-card">
-                <img src="tere_bin.jpg" alt="Tere Bin">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTM1YTM2OGUtYTYxMC00NzYyLWIxYmMtNDM1ZjU3YmY0NjBiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Mere Humsafar">
                 <div class="drama-info">
-                    <h3>Tere Bin</h3>
-                    <p>A story of love, sacrifice, and family values.</p>
-                    <a href="https://www.youtube.com/playlist?list=PLQ2dLqX3ox0sGMKTcJd0XOJxRYKqbxvAG"  target="_blank"  class="cta-button">Watch Now</a>
+                    <details>
+                        <summary><h3>Yakeen Ka Safar</h3></summary>
+                        <div class="drama-meta">
+                            <span>2018 | Romance</span>
+                        </div>
+                        <p>Strong women breaking stereotypes.</p>
+                        <a href="YKS.html" target="_blank" class="cta-button">Read Here</a>
+                    </details>
                 </div>
             </div>
+
             <div class="drama-card">
-                <img src="parizaad.jpg" alt="Parizaad">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUDPrgIUkmUmxFuDgNwpDsJVW4q0GlQHrcQ&s" alt="Sang-e-Mah">
                 <div class="drama-info">
-                    <h3>Parizaad</h3>
-                    <p>Journey of a man fighting against societal prejudices.</p>
-                    <a href="https://www.youtube.com/playlist?list=PLbVdwtmx18stXNeBl2fTxbHUsP-HbIYth"  target="_blank" class="cta-button">Watch Now</a>
+                    <details>
+                        <summary><h3>Parizaad</h3></summary>
+                        <div class="drama-meta">
+                            <span>2022 | Social Drama</span>
+                        </div>
+                        <p>Journey of a man fighting against societal prejudices.</p>
+                        <a href="Parizaad.html" target="_blank" class="cta-button">Read Here</a>
+                    </details>
                 </div>
             </div>
+
             <div class="drama-card">
-                <img src="sinf_ahan.jpg" alt="Sinf-e-Aahan">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOawVAIYRF58Qlvkc9PMmhZ3I2OPKrIQsZ1cDfmT2m6SzRVrJg5TNvjZVlkWHW12B-J7o&usqp=CAU" alt="Dil Ruba">
                 <div class="drama-info">
-                    <h3>Sinf-e-Aahan</h3>
-                    <p>Strong women breaking stereotypes.</p>
-                    <a href="https://www.youtube.com/watch?v=3frfl267sos&list=PLb2aaNHUy_gGLC-fH3JYcmvPEo933cKvB" target="_blank" class="cta-button">Watch Now</a>
+                    <details>
+                        <summary><h3>Dastaan</h3></summary>
+                        <div class="drama-meta">
+                            <span>2010 | Period Drama</span>
+                        </div>
+                        <p>A heart-wrenching tale of Indo-Pak Partition.</p>
+                        <a href="Dastaan.html" target="_blank" class="cta-button">Read Here</a>
+                    </details>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Pakistani Dramas Hub. All rights reserved.</p>
