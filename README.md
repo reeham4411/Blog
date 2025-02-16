@@ -38,6 +38,8 @@ Welcome to the **Pakistani Dramas Blog**! 🎭 This simple yet elegant website p
     ├── videos/      # Drama clips
 ```
 
+## 📸 Screenshots
+
 ## 🚀 How to Run the Website
 ### Using File Explorer
 1. **Download the files** or clone the repository.
@@ -63,6 +65,11 @@ Welcome to the **Pakistani Dramas Blog**! 🎭 This simple yet elegant website p
    ```sh
    open index.html
    ```
+
+## 📌 Contribution of Members
+- **Adeel Hassan (468032)** – Implemented the basic structure of the website along with the home page and dramas page.
+- **Fatima Ali (470708)** – Implemented the reviews section and most of the formatting and styling.
+- **Adeena Reeham (480941)** – Implemented the login, about, and contact pages, plus the bonus task (implementation of `<details>` and `<summary>`).
 
 ## 📌 Future Enhancements
 - Improve styling with more CSS enhancements.
