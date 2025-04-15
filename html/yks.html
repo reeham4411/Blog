@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Pakistani Dramas Hub</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/yks.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dramas.html">Dramas</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top">↑</button>
+
+  <div class="text-container">
+    <h2>Yakeen Ka Safar - A Tale of Love, Loss, and Redemption</h2><br>
+    <p class="author-info"><b>Written by:</b> Fatima Ali</p><br>
+    <img src="https://m.media-amazon.com/images/M/MV5BNTM1YTM2OGUtYTYxMC00NzYyLWIxYmMtNDM1ZjU3YmY0NjBiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Yakeen Ka Safar" width="800" height="400"><br><br>
+
+    <!-- INTRODUCTION -->
+    <h3>Introduction:</h3>
+    <p class="text">Yakeen Ka Safar is a Pakistani drama that aired in 2017 on Hum TV...</p>
+    <div id="introMore" class="text" style="display: none;">
+      It gained popularity due to its engaging storyline, strong performances, and emotional depth. The series captivated audiences with its themes of love, resilience, and personal growth.
+    </div>
+    <button onclick="toggleContent('introMore', this)">Show More</button>
+
+    <!-- PLOT OVERVIEW -->
+    <h3>Plot Overview:</h3>
+    <p class="text">The drama follows Dr. Asfandyar and Dr. Zubia as they face personal and professional challenges...</p>
+    <div id="plotMore" class="text" style="display: none;">
+      The story includes three arcs: Daniyal’s fall, Asfandyar’s transformation, and Zubia’s redemption—beautifully interwoven to keep viewers hooked.
+    </div>
+    <button onclick="toggleContent('plotMore', this)">Show More</button>
+
+    <!-- CHARACTERS -->
+    <h3>Character Development:</h3>
+    <ul class="text">
+      <li><b>Dr. Asfandyar:</b> From arrogance to compassion, his growth is heartwarming.</li>
+      <li><b>Dr. Zubia:</b> Her resilience in the face of judgment makes her a standout character.</li>
+    </ul>
+    <div id="charMore" class="text" style="display: none;">
+      <ul>
+        <li><b>Daniyal (Shaz Khan):</b> A tragic figure in the fight against injustice.</li>
+        <li><b>Gaiti (Hira Mani) & Dr. Usman (Farhan Ali Agha):</b> Add depth and dimension to the narrative.</li>
+      </ul>
+    </div>
+    <button onclick="toggleContent('charMore', this)">Show More</button>
+
+    <!-- THEMES -->
+    <h3>Themes and Social Issues</h3>
+    <ul class="text">
+      <li>Women’s Rights and Domestic Abuse</li>
+    </ul>
+    <div id="themesMore" class="text" style="display: none;">
+      <ul>
+        <li>Corruption and Injustice: Daniyal’s fate highlights flaws in the legal and political systems.</li>
+        <li>Redemption: The transformations of Zubia and Asfandyar deliver hope and inspiration.</li>
+      </ul>
+    </div>
+    <button onclick="toggleContent('themesMore', this)">Show More</button>
+
+    <!-- CINEMATOGRAPHY -->
+    <h3>Cinematography and Direction:</h3>
+    <p class="text">Visually stunning, with symbolic elements like rain and mirrors enhancing the narrative.</p>
+
+    <!-- MUSIC -->
+    <h3>Music and OST:</h3>
+    <p class="text">The OST by Haniya Aslam is emotional and powerful...</p>
+    <div id="musicMore" class="text" style="display: none;">
+      The background music enhances dramatic moments and adds emotional richness to key scenes.
+    </div>
+    <button onclick="toggleContent('musicMore', this)">Show More</button>
+
+    <!-- AUDIENCE -->
+    <h3>Audience Reception and Legacy:</h3>
+    <p class="text">Yakeen Ka Safar received critical acclaim...</p>
+    <div id="audienceMore" class="text" style="display: none;">
+      Years later, it still resonates with viewers for its honesty, emotional depth, and meaningful messaging across audiences worldwide.
+    </div>
+    <button onclick="toggleContent('audienceMore', this)">Show More</button>
+
+    <!-- CONCLUSION -->
+    <h3>Conclusion:</h3>
+    <p class="text">A blend of drama, romance, and social themes, Yakeen Ka Safar remains a masterpiece worth watching.</p>
+
+    <!-- YOUTUBE -->
+    <h3 style="font-style: italic; font-size: 1.3rem;">Check out the first episode here:</h3><br>
+    <iframe width="800" height="509" src="https://www.youtube.com/embed/-k5fae_GbIw?list=PLbVdwtmx18sufVJqxqhRpa27go9_a9ZH6" title="Yakeen Ka Safar Episode #01" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Pakistani Dramas Hub. All rights reserved. | <span id="currentDateTime"></span></p>
+</footer>
+
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>

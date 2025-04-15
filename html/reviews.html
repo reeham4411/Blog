@@ -4,115 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dramas - Pakistani Dramas Hub</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <link rel="stylesheet" href="../css/global.css">
 
-        body {
-            background-color:  #f8e9ea;
-            padding-top: 4rem;
-        }
-
-        nav {
-            background-color: #680002;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color:#e2bdbe;
-        }
-
-        .dramas-container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .drama-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .drama-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            padding: 1rem;
-        }
-
-        .drama-card:hover {
-            transform: translateY(-5px);
-            background-color: #e2bdbe;
-        }
-
-        .drama-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .drama-info {
-            padding: 1rem;
-        }
-
-        .drama-info h3 {
-            color: #680002;
-            margin-bottom: 0.5rem;
-        }
-
-        .drama-meta {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #680002;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 1rem;
-        }
-
-        .cta-button:hover {
-            background-color: #680002;
-        }
-
-        footer {
-            background-color:#680002;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/reviews.css">
 </head>
 <body>
     <nav>
@@ -125,6 +19,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top">↑</button>
+
 
     <div class="dramas-container">
         <h1>Let's Review!</h1><br>
@@ -175,7 +71,10 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Pakistani Dramas Hub. All rights reserved.</p>
+        <p>&copy; <span id="currentYear"></span> Pakistani Dramas Hub. All rights reserved. | <span id="currentDateTime"></span></p>
     </footer>
+    
+    <script src="../JS/script.js"></script>
+
 </body>
 </html>
