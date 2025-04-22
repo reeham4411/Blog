@@ -3,44 +3,67 @@
 Welcome to the **Pakistani Dramas Blog**! 🎭 This simple yet elegant website provides insights into Pakistani dramas, including reviews, ratings, and featured content. The site is built purely using **HTML** with **internal CSS**, without any external stylesheets or JavaScript.
 
 ## 📌 Features
-- 🏠 **Home Page** – A welcoming introduction to the Pakistani drama industry.
-- 🎬 **Dramas Section** – Listings of famous Pakistani dramas.
-- ⭐ **Reviews** – Detailed reviews of top-rated dramas.
-- 📞 **Contact Page** – Reach out for inquiries or suggestions.
-- 🎵 **OST Section** – Listen to iconic drama soundtracks.
-- 🎥 **Video Previews** – Watch featured drama clips.
-- 📊 **Ratings Table** – View ratings for the most loved dramas.
+- 🏠 **Home Page**: Welcomes users with featured dramas (e.g., Tere Bin, Parizaad, Sinf-e-Aahan).
+- 🔑 **Login Page**: JavaScript-validated login form.
+- 🎬 **Dramas Page**: Lists popular dramas with images and external watch links.
+- ⭐ **Reviews Page**: Insights and ratings for dramas.
+- 📖 **About Page**: Mission and vision of the hub.
+- 📞 **Contact Page**: User feedback form.
+- 📜 **Additional Pages**: Includes pages like Dastaan, Parizaad, Thank You, and YKS (possibly drama-specific or placeholder pages).
+- ⏰ **Live Clock**: Footer displays real-time date and time (updates every second).
+- ⬆️ **Back-to-Top Button**: Appears on scroll for easy navigation.
+- 📱 **Responsive Design**: Adapts to various screen sizes using external CSS.
 
 ## 🛠️ Technologies Used
-- **HTML5** – For structuring the web pages.
-- **Internal CSS** – Embedded within `<style>` tags for styling.
+- **HTML5**: Structure of all pages.
+- **CSS3**: External styling (e.g., `global.css`, `index.css`, page-specific CSS files).
+- **JavaScript**: Interactivity (`script.js`) for form validation, live clock, scroll effects, and welcome alerts.
 
-## 🎨 Design Principles
-- **Minimalistic & Responsive Layout** 📏
-- **Accessible Navigation** 🧭
-- **Visually Appealing Content Sections** 🎨
-- **No External Dependencies** 🚀 (No JavaScript or external stylesheets)
+## 🎨 Design Highlights
+- Consistent theme with a modern color palette.
+- Flexbox-based layout for drama cards.
+- Hover effects on buttons and links.
+- Smooth scrolling with back-to-top functionality.
+- Clean footer with dynamic year and live clock.
 
-## 📂 Project Structure
+## 📁 Project Structure
 ```
-├── index.html       # Home page
-├── dramas.html      # Dramas listing
-├── reviews.html     # Reviews page
-├── contact.html     # Contact page
-└── assets/
-    ├── images/      # Drama posters and thumbnails
-    ├── audio/       # Drama OST files
-    └── videos/      # Drama clips
+BLOG/
+├── Assets/
+│   ├── Hijar.jpg             # Drama image
+│   ├── mainpagepic.jpg       # Main page image (possibly hero image)
+│   ├── parizaad.jpg          # Drama image
+│   ├── sinf_ahan.jpg         # Drama image
+│   └── tere_bin.jpg          # Drama image
+├── css/
+│   ├── About.css             # About page styles
+│   ├── contact.css           # Contact page styles
+│   ├── Dastaan.css           # Dastaan page styles
+│   ├── dramas.css            # Dramas page styles
+│   ├── global.css            # Global styles
+│   ├── index.css             # Home page styles
+│   ├── login.css             # Login page styles
+│   ├── Parizaad.css          # Parizaad page styles
+│   ├── reviews.css           # Reviews page styles
+│   ├── thankyou.css          # Thank You page styles
+│   └── yks.css               # YKS page styles
+├── html/
+│   ├── About.html            # About page
+│   ├── contact.html          # Contact page
+│   ├── Dastaan.html          # Dastaan page
+│   ├── dramas.html           # Dramas page
+│   ├── index.html            # Home page
+│   ├── login.html            # Login page
+│   ├── Parizaad.html         # Parizaad page
+│   ├── reviews.html          # Reviews page
+│   ├── thankyou.html         # Thank You page
+│   └── yks.html              # YKS page
+├── JS/
+│   └── script.js             # JavaScript logic
+└── README.md                 # This file
 ```
-
-## 📸 Screenshots
-(Insert screenshots of the website here to showcase its design)
 
 ## 🚀 How to Run the Website
-### Using File Explorer
-1. **Download the files** or clone the repository.
-2. Open `index.html` in any modern web browser.
-3. Enjoy browsing Pakistani dramas! 🎭
 
 ### Using Command Line (Windows)
 1. Navigate to the project directory in the command prompt:
@@ -62,10 +85,11 @@ Welcome to the **Pakistani Dramas Blog**! 🎭 This simple yet elegant website p
    open index.html
    ```
 
-## 📌 Future Enhancements
-- Improve styling with more CSS enhancements.
-- Add more drama reviews and ratings.
-- Include interactive elements when JavaScript is allowed.
+## 📌 Contribution of Members
+- **Adeel Hassan (468032)** – Home page, drama cards, JS Interactivity
+- **Fatima Ali (470708)** – CSS styling, Flexbox layout, reviews page
+- **Adeena Reeham (480941)** – Login, about, contact pages, form validation
+
 
 **© 2025 Pakistani Dramas Blog. All rights reserved.** 🎬🇵🇰
 

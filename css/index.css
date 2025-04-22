@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+nav {
+ height: 60px;
+}
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Assets/mainpagepic.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-top: 3.5rem;
+  padding: 2rem;
+}
+
+.hero:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../Assets/mainpagepic.png");
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #e2bdbe;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.featured-dramas {
+  padding: 2rem;
+  max-width: 1200px;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+.drama-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.drama-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s;
+  border: 1px solid #680002;
+}
+
+/* Image hover effect */
+.drama-card:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.drama-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.drama-info {
+  padding: 1rem;
+}
+
+.drama-info h3 {
+  color: #680002;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #680002;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #e2bdbe;
+}
+
+
+
+/* Tablet View (768px - 1023px) */
+@media (max-width: 1023px) {
+  .featured-dramas {
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile View (< 768px) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .hero {
+    height: 80vh;
+    padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .drama-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+  }
+}

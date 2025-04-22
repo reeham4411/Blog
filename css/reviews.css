@@ -1,0 +1,62 @@
+
+
+.dramas-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.drama-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.drama-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  padding: 1rem;
+}
+
+.drama-card:hover {
+  transform: translateY(-5px);
+  background-color: #e2bdbe;
+}
+
+.drama-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.drama-info {
+  padding: 1rem;
+}
+
+.drama-info h3 {
+  color: #680002;
+  margin-bottom: 0.5rem;
+}
+
+.drama-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #680002;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #680002;
+}
