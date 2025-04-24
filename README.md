@@ -1,6 +1,6 @@
 # Pakistani Dramas Website
 
-Welcome to the **Pakistani Dramas Blog**! 🎭 This simple yet elegant website provides insights into Pakistani dramas, including reviews, ratings, and featured content. The site is built purely using **HTML** with **internal CSS**, without any external stylesheets or JavaScript.
+Welcome to the **Pakistani Dramas Blog**! 🎭 This simple yet elegant website provides insights into Pakistani dramas, including reviews, ratings, and featured content. The site is built purely using **HTML** with **CSS style sheets** and JS
 
 ## 📌 Features
 - 🏠 **Home Page**: Welcomes users with featured dramas (e.g., Tere Bin, Parizaad, Sinf-e-Aahan).
@@ -88,7 +88,7 @@ BLOG/
 ## 📌 Contribution of Members
 - **Adeel Hassan (468032)** – Home page, drama cards, JS Interactivity
 - **Fatima Ali (470708)** – CSS styling, Flexbox layout, reviews page
-- **Adeena Reeham (480941)** – Login, about, contact pages, form validation
+- **Adeena Reeham (480941)** – Login, about, contact pages, form validation, Responsiveness, Final Touches
 
 
 **© 2025 Pakistani Dramas Blog. All rights reserved.** 🎬🇵🇰

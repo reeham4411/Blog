@@ -38,7 +38,7 @@ function toggleContent(id, btn) {
   const content = document.getElementById(id);
   const isHidden = content.style.display === "none" || content.style.display === "";
   content.style.display = isHidden ? "block" : "none";
-  btn.textContent = isHidden ? "Show Less" : "Show More";
+  btn.textContent = isHidden ? "Show Less" : "Click Here!";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
