@@ -1,84 +1,569 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Times New Roman", Times, serif;
-  }
-  
-  body {
-    background-color: #f5f5f5;
-
-    margin-top: 100px;  
-  }
-  /* Navigation */
-  nav {
-    background: linear-gradient(to right, #680002, #a40005);
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Navigation hover effect */
-  nav a:hover {
-    color: #e2bdbe;
-  }
-
-  
-#backToTopBtn {
-  display: block;
+/* Navigation */
+nav {
+  background: linear-gradient(to right, #680002, #a40005);
+  padding: 1rem;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #f3eeee;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 100%;
-  border: 1px solid #680002;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
-#backToTopBtn:hover {
-  background-color: #ad0404;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-footer {
-    background: linear-gradient(to right, #680002, #a40005);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-    font-family: "Georgia", serif;
-    font-size: 1.1rem;
-    font-weight: bold;
-    font-style: italic;
-    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
-footer:hover {
-  background: linear-gradient(to right, #a40005, #680002);
+
+/* Navigation hover effect */
+nav a:hover {
   color: #e2bdbe;
 }
-#currentDateTime , #currentyear {
-  display: inline;
-  visibility: visible;
+
+/* For screens smaller than 768px (typical mobile breakpoint) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.5rem 0;
+  }
+}
+
+body {
+  background-color: #f5f5f5;
+  padding-top: 70px; 
+}
+
+ @media (max-width: 768px) {
+  body {
+    padding-top: 220px; 
+   } 
+}
+/* Parizad */
+
+.text-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+h2 {
+  color: #680002;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.author-info {
+  text-align: left;
+  color: #680002;
+  font-style: italic;
+}
+h2 {
+  color: #680002;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+h3 {
+  color: #680002;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.text {
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #680002;
+  font-size: 1.3rem;
+}
+/* Dastan */
+
+
+.text-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+h2 {
+  color: #680002;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.author-info {
+  text-align: left;
+  color: #680002;
+  font-style: italic;
+}
+h2 {
+  color: #680002;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+h3 {
+  color: #680002;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.text {
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #680002;
+  font-size: 1.3rem;
+}
+/* Yakeen ka safar  */
+
+
+.text-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+h2 {
+  color: #680002;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.author-info {
+  text-align: left;
+  color: #680002;
+  font-style: italic;
+}
+h2 {
+  color: #680002;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+h3 {
+  color: #680002;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.text {
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #680002;
+  font-size: 1.3rem;
+}
+/* Dramas page  */
+
+
+.dramas-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.filters {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #680002;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #680002;
+}
+
+.drama-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.drama-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.drama-card:hover {
+  transform: translateY(-5px);
+}
+
+.drama-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.drama-info {
+  padding: 1rem;
+}
+
+.drama-info h3 {
+  color: #680002;
+  margin-bottom: 0.5rem;
+}
+
+.drama-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  color: #ffd700;
+  margin-top: 0.5rem;
+}
+/* Index page */
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+/* nav {
+ height: 60px;
+} */
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../Assets/mainpagepic.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-top: 3.5rem;
+  padding: 2rem;
+}
+
+.hero:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../Assets/mainpagepic.png");
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #e2bdbe;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.featured-dramas {
+  padding: 2rem;
+  max-width: 1200px;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+.drama-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.drama-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s;
+  border: 1px solid #680002;
+}
+
+/* Image hover effect */
+.drama-card:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.drama-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.drama-info {
+  padding: 1rem;
+}
+
+.drama-info h3 {
+  color: #680002;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #680002;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #e2bdbe;
+}
+
+/* About page */
+
+
+.about-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-section h1 {
+  color: #680002;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  color: #333;
+  line-height: 1.6;
+}
+/* Contact */
+
+.contact-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-section h1 {
+  color: #680002;
+  margin-bottom: 1rem;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-section label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.rating-container input {
+  display: none; 
+}
+
+.rating-container label {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.rating-container input:checked ~ label {
+  color: #ffd700; 
+}
+
+.contact-section button {
+  background-color: #680002;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #e2bdbe;
+}
+/* Login  */
+
+
+.contact-section {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-section h1 {
+  color: #680002;
+  margin-bottom: 1rem;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-section label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-section input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-section button {
+  background-color: #680002;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-section button:hover {
+  background-color: #e2bdbe;
+}
+/* Review  */
+
+
+.dramas-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.drama-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.drama-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  padding: 1rem;
+}
+
+.drama-card:hover {
+  transform: translateY(-5px);
+  background-color: #e2bdbe;
+}
+
+.drama-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.drama-info {
+  padding: 1rem;
+}
+
+.drama-info h3 {
+  color: #680002;
+  margin-bottom: 0.5rem;
+}
+
+.drama-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #680002;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background-color: #680002;
+}
+/* Thankyou  */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8e9ea;
+  padding-top: 5rem;
+}
+.message {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #680002;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+a:hover {
+  background-color: #e2bdbe;
 }
